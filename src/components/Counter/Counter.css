@@ -1,0 +1,19 @@
+.counter-inc-button {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    margin-right: 5px;
+    background-color: green;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.counter-dec-button {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+}
