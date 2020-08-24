@@ -1,19 +1,30 @@
+@import '../../styling/colors.scss';
+
 .counter-inc-button {
     width: 28px;
     height: 28px;
     font-size: 18px;
     margin-right: 5px;
-    background-color: green;
+    background-color: $success;
     border-radius: 50%;
     color: #fff;
+
+    &:hover {
+        color: $success;
+        background-color: #fff;
+    }
 }
 
 .counter-dec-button {
     width: 28px;
     height: 28px;
     font-size: 18px;
-    
-    background-color: red;
+    background-color: $danger;
     border-radius: 50%;
     color: #fff;
+
+    &:hover {
+        color: $danger;
+        background-color: #fff;
+    }
 }
