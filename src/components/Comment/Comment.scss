@@ -1,0 +1,20 @@
+.Comment {
+    margin-top: 12px;
+    padding: 8px 0px;
+
+    .UserAvatar {
+        width: 100px;
+    }
+    
+    .MuiCardHeader-content {
+        text-align: left !important;
+        margin-top: 4px;
+    }
+
+    .comment-date {
+        font-size: 12px;
+        font-style: italic;
+        text-align: center;
+        color: gray;
+    }
+}

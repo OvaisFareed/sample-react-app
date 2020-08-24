@@ -1,0 +1,86 @@
+@import './styling/colors.scss';
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 12vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-Content {
+  padding: 12px 30px;
+}
+
+.theme-toggle {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.theme-toggle-btn {
+  padding-top: 10px;
+}
+
+.light {
+  color: #000000;
+  background: #eeeeee;
+}
+
+.dark {
+  color: #ffffff;
+  background: #222222;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.nav li {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.outlet {
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+.router-link {
+  text-decoration: none;
+  // color: grey;
+  padding: 10px;
+}
+
+.router-link:hover {
+  // color: black;
+  // background: #80808045;
+  border-radius: 5px;
+}
+
+.selected {
+  text-decoration: none;
+  color: $primary;
+  padding-bottom: 5px;
+  border-bottom: 2px solid $primary;
+}
