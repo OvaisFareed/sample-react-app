@@ -1,29 +1,29 @@
 import React from 'react';
-import UserInfo from './UserInfo';
+import './Comment.scss';
+import UserAvatar from './UserAvatar';
+import { CommentType } from '../../interfaces/types';
+import { Card, CardHeader, Avatar } from '@material-ui/core';
+import DeleteIconButton from '../DeleteIconButton/DeleteIconButton';
 
-export interface CustomInputProps {
-  comment: {
-    author: {
-      name: string,
-      avatarUrl: string
-    };
-    text: string;
-    date: string;
-    
-  }
+interface CommentProps {
+  comment: CommentType;
+  clickHandler: () => any
 }
 
-const Comment: React.FC<CustomInputProps> = (props) => {
+const Comment: React.FC<CommentProps> = ({comment, clickHandler}) => {
     return (
-      <div className="Comment">
-        <UserInfo user={props.comment.author} />
-        <div className="Comment-text">
-          {props.comment.text}
-        </div>
-        <div className="Comment-date">
-          {props.comment.date}
-        </div>
-      </div>
+      <Card className="Comment">
+        <div className="comment-date">{comment.date}</div>
+        <CardHeader
+          avatar={
+            <Avatar>
+              <UserAvatar user={comment.author} />
+            </Avatar>
+          }
+          action={<DeleteIconButton clickHandler={clickHandler} />}
+          title={comment.text}
+        />
+      </Card>
     );
   }
 

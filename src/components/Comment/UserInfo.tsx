@@ -1,14 +1,12 @@
 import React from 'react';
-import Avatar from './Avatar';
+import Avatar from './UserAvatar';
+import { Author } from '../../interfaces/types';
 
-export interface CustomInputProps {
-    user: {
-      name: string,
-      avatarUrl: string
-    }
+interface UserProps {
+  user: Author
 }
 
-const UserInfo: React.FC<CustomInputProps> = (props) => {
+const UserInfo: React.FC<UserProps> = (props) => {
     return (
         <div className="UserInfo">
           <Avatar user={props.user} />
